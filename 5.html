@@ -1,0 +1,105 @@
+<!-- 5. Create a simple webpage with multiple columns as shown in below image. • Make sure all columns have equal heights, regardless of their content. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    body{
+        background-color: #2d2d2d;
+        display: flex;
+        font-family: Montserrat;
+    }
+
+    h1{
+        color: #8a2be2;
+        text-align: center;
+    }
+
+    .heading{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .main-sections{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .main-container{
+        width: 100%;
+    }
+
+    .container{
+        width: 25%;
+        
+        background-color: #f0f0f0;
+        display: flex;
+        border: 8px solid #3d3d3d;
+        border-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > p{
+        color: #f0f0f0;
+    }
+    .container1{
+        background-color: #2560ba;
+        display: flex;
+    }
+    .container2{
+        background-color: #ba7225;
+        display: flex;
+    }
+    .container3{
+        background-color: #731dba;
+        display: flex;
+    }
+
+    .container1 > img{
+        width: 150px;
+    }
+    .container3 > img{
+        width: 220px;
+    }
+    .container2 > img{
+        width: 100px;
+    }
+
+    .content{
+        padding: 0px 15px;
+        text-align: justify;
+    }
+
+</style>
+<body>
+    <div class="main-container">
+        <h1>Full Stack Web Development 2.0</h1>
+        <section class="main-sections">
+            <div class="container container1">
+                <p class="heading">HTML</p>
+                <img src="https://imgs.search.brave.com/qGPxfA-ggrx0ps4QvXo23yikgr0CMzekl2lWfFrJvOg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjViZGNlZjEw/MTRjMGI1ZTQ4OWMu/cG5n" alt="HTML-LOGO">
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eos incidunt quia alias. Velit neque nobis molestiae unde veritatis aut ea iste ipsum repellat hic est minima praesentium atque impedit, quia quod inventore nihil fuga labore in eaque. Sit, accusamus. Aperiam aspernatur harum corporis autem porro animi modi quidem quia, adipisci ullam! Cumque aliquid deserunt ea mollitia dolore, harum omnis ipsam numquam natus error laboriosam ipsa a assumenda quaerat quos, non, esse culpa recusandae. Voluptate, laboriosam illo. Nesciunt doloribus, pariatur, aut quae rerum ducimus ratione iusto distinctio non similique aliquid nisi et adipisci voluptatem expedita natus quas quo officia repellat! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="container container2">
+                <p class="heading">CSS</p>
+                <img src="https://imgs.search.brave.com/2ayblgmHCcIBcGDuqxik8xJfjtb4H-tTzTmaVCOYfgw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9jc3MtbG9nby5w/bmc" alt="CSS-LOGO">
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt nesciunt provident nisi nobis laborum incidunt, labore quis soluta tempora exercitationem ut, accusantium, reprehenderit modi nam cum ipsum vel! Beatae incidunt distinctio possimus neque fuga voluptatem similique, sit commodi, dicta architecto rem. Aliquam nostrum aspernatur enim quibusdam cum praesentium pariatur impedit accusamus illum expedita tempora magnam, iure consectetur cumque ex autem, rem cupiditate beatae dicta. Maiores omnis, iste dicta doloremque reiciendis iusto nam suscipit ipsum optio fugit tempore sapiente explicabo aliquam ipsam dolorem cumque nostrum reprehenderit impedit commodi eum error excepturi, id nisi sed! Repudiandae facilis!</p>
+            </div>
+            <div class="container container3">
+                <p class="heading">JS</p>
+                <img src="https://imgs.search.brave.com/fkY1qMzFbCPR8C3-2bsIR-iN_Z2AIun_rpTXNbZnVIg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA5/L0phdmFTY3JpcHQt/TG9nby01MDB4MzEz/LnBuZw" alt="JavaScript-Logo">
+                <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente natus quidem delectus tenetur, provident, autem minus fuga dolore id at ratione, odio tempore? Autem laborum placeat amet aspernatur fuga officia iste nisi, adipisci accusantium soluta tenetur pariatur atque error commodi possimus iusto dolore! Magnam itaque dolor voluptates dolore nostrum dolores adipisci cum, optio accusantium suscipit, numquam tempore laboriosam ipsa dolorem facilis recusandae sapiente, voluptas aspernatur perferendis ipsum necessitatibus? Iste, animi ad earum minima repellat obcaecati rerum voluptas itaque voluptatum dolorem, eum autem error commodi at?</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
