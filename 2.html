@@ -1,0 +1,97 @@
+<!-- 2. Create a simple webpage as shown in the image below.
+• The webpage must contain course details.
+• The cards must be aligned side by side. If any new card gets added, the size of the cards must not be varied and the flow must be moved to the next row automatically. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details Web Page</title>
+</head>
+
+<style>
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #f3fcff;
+    }
+    h1{
+        text-align: center;
+        color: #5026fb;
+        margin: 10px 0px;
+    }
+    .content-decription{
+        text-align: center;
+        color: #5d5d5d;
+        margin: 10px 0px;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 150px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .card{
+        width: 300px;
+        background-color: #ffffff;
+        padding: 15px;
+        border: 0;
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 2px 2px 8px;
+        opacity: 80%;
+    }
+
+    .card:hover{
+        opacity: 100%;
+        transition: 0.2s;
+    }
+
+    h2{
+        font-size: 20px;
+        color: #5026fb;
+    }
+    .instructor-name{
+        font-weight: lighter;
+    }
+    .price{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>Course Details</h1>
+    <p class="content-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestias.</p>
+
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/642152e5af09d60df056811a.png" alt="Course 1">
+            <h2>Full Stack Web Development 2.0 Sigma Batch</h2>
+            <p class="instructor-name">XYZ</p>
+            <p class="price">@3500</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/63a2ea7e8899438ee77eae5a.png" alt="Course 2">
+            <h2>Data Science Impact Batch</h2>
+            <p class="instructor-name">XYZ</p>
+            <p class="price">@3500</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64af76666977cc11e7e4086e.png" alt="Course 3">
+            <h2>Web Development</h2>
+            <p class="instructor-name">XYZ</p>
+            <p class="price">@3500</p>
+        </div>
+    </div>
+   
+</body>
+</html>
