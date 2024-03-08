@@ -1,0 +1,59 @@
+<!-- 8. Create a simple avatar design as shown in the image below. • Pick any 4 random images and achieve the output. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+
+<style>
+    body{
+        background-color: #313131;
+    }
+    .main-images{
+        display: flex;
+        align-items: center;
+        height: 100vh; 
+        justify-content: center;
+    }
+
+    img{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-left: -50px;
+        border: 8px solid #ff5d5d;
+    }
+
+    .image1 {
+        z-index: 4;
+      }
+
+      .image2 {
+        z-index: 3;
+      }
+
+      .image3 {
+        z-index: 2;
+      }
+
+      .image4 {
+        z-index: 1;
+      }
+</style>
+<body>
+    <section class="main-images">
+        <img class="image1" src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?t=st=1709871031~exp=1709874631~hmac=a7d8a37b2016740d49f044a08e530a58c0607e5d78980105e8619bbe7764f3a1&w=1060" alt="image-1">
+        
+        <img class="image2" src="https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?t=st=1709871047~exp=1709874647~hmac=100122924eb639538a848ca048ed31dd321750b704c335c688cb12b367109989&w=1060" alt="image-2">
+        
+        <img class="image3" src="https://img.freepik.com/free-photo/top-view-unrecognizable-hacker-performing-cyberattack-night_1098-18706.jpg?t=st=1709871060~exp=1709874660~hmac=47b0be41262b8df767ab2bd9b426c3e9cf6af37acc4ca757a81157f218962420&w=740" alt="image-3">
+        
+        <img class="image4" src="https://img.freepik.com/free-photo/malware-breaking-into-database-screen_482257-77676.jpg?t=st=1709871290~exp=1709874890~hmac=d6fc4362d883ea99f9da364a3aad47d71ad60aeb25fb7ead4dfa9479c411a10d&w=1060" alt="image-4">
+    </section>
+</body>
+</html>
